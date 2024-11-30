@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1 id="welcome_introductions"></h1>
 </body>
+
+<script>
+    window.onload = function(){
+        randomise_name();
+    }
+
+    async function randomise_name(){
+        // loop through a list of randomly generated words and then end up with my name
+        let welcome_introductions = ["Welcome", "to", "my", "page","!"]
+        for (elem in welcome_introductions) {
+            document.getElementById("welcome_introductions").innerText += elem;
+            await sleep(10);
+        }
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+</script>
 </html>
