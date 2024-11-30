@@ -12,7 +12,7 @@
     async function randomise_name(){
         // loop through a list of randomly generated words and then end up with my name
         let welcome_introductions = ["Welcome", "to", "my", "page","!"]
-        for (elem in welcome_introductions) {
+        for (let elem in welcome_introductions) {
             document.getElementById("welcome_introductions").innerText += elem;
             await sleep(10);
         }
