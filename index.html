@@ -13,7 +13,7 @@
         // loop through a list of randomly generated words and then end up with my name
         let welcome_introductions = ["Welcome", "to", "my", "page","!"]
         for (let elem in welcome_introductions) {
-            document.getElementById("welcome_introductions").innerText += elem;
+            document.getElementById("welcome_introductions").innerText += elem[i];
             await sleep(10);
         }
     }
